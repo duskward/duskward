@@ -1,8 +1,21 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <v-app id="main" :style="{background: $vuetify.theme.themes.dark.background}">
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
+
+<script>
+export default {
+  name: 'App',
+  computed: {
+    theme() {
+      return (this.$vuetify.theme.dark) ? 'dark' : 'light';
+    },
+  },
+};
+</script>
 
 <style>
 #app {
@@ -11,6 +24,11 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  background-color: #101218;
+}
+
+.v-application {
+    background-color: #101218 !important;
 }
 
 nav {
