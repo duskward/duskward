@@ -2,6 +2,7 @@
   <div>
     <v-img
       class="hero"
+      lazy-src="https://media.discordapp.net/attachments/966490232147030036/970196856288210974/duskward_logo.png"
       src="https://media.discordapp.net/attachments/966490232147030036/970138808446238720/Duskward_noname.gif"/>
     <v-container class="text-center mb-16">
       <!-- eslint-disable max-len -->
